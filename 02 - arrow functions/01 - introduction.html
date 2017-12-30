@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>01-arrow functions</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const cityes = ['Brasilia', 'Sao Paulo', 'Palmas'];
+
+    const liveCity = cityes.map(function(name){
+        return `I live in ${name}!`;
+    });
+    console.log(liveCity);
+
+    const loveCity = cityes.map((name)=>{
+        return `I love ${name}!`;
+    });
+    console.log(loveCity);
+
+    const c = cityes.map(name => {
+        return `I love ${name}`;
+    });
+    console.log(c);
+
+    const loveArrowOneLine = cityes.map(name => `City ${name}!`);
+    console.log(loveArrowOneLine);
+
+    const loveChain = cityes
+                        .filter(name => name === 'Palmas')
+                        .map(name => `My city is ${name}`);
+    console.log(loveChain);
+</script>
+</html>
