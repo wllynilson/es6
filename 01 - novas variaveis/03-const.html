@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>03-const JS - ES6</title>
+</head>
+<body>
+    <script>
+        //Muito se diz que um objeto const é imutável. MENTIRA!
+        const num = 30;
+        
+        const wlly = {
+            "name": "Wllynilson",
+            "age": 23
+        }
+        console.log(wlly);
+
+        wlly.age = num;
+        console.log(wlly);
+
+        //const é uma variável que eu não posso reatribuir. Ela será constante em toda vida, no entanto os valores
+        //de dentro dela, se for um objeto, poderão ser modificados.
+    </script>    
+</body>
+</html>
